@@ -16,12 +16,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:background="#D6D7D7"
             android:orientation="vertical">
 
@@ -29,7 +29,6 @@
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:text="餐厨垃圾" />
 
             <Button
@@ -50,22 +49,181 @@
                 android:layout_height="wrap_content"
                 android:text="其他垃圾" />
         </LinearLayout>
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
             android:orientation="vertical"
-            >
+            android:visibility="visible">
 
-            <ImageView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/img3"
-                android:layout_gravity="center"/>
+                android:orientation="vertical"
+                android:background="#13BA09"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="247dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/img3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:inputType="textMultiLine"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="      餐厨垃圾是指易腐的生物质废弃物。包括剩菜剩饭、瓜皮果核、花卉绿植、肉类碎骨、过期食品、餐厨垃圾等。"
+                    android:textColor="#FF000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tet_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:maxLines="12"
+                    android:scrollbarSize="10dp"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:text="    姑娘果\n    冰激凌\n    QQ软糖\n    火腿\n    阿尔卑斯糖\n    阿华田巧克力酱\n    艾草\n    鹌鹑蛋\n    奥尔良鸡翅\n    奥尔良烤鸡\n    奥利奥饼干\n    奥利奥酸奶蛋糕\n    澳梅\n    澳洲牛肉\n    "
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0D8EFF"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="247dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/img4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:inputType="textMultiLine"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="      可回收物是指适宜回收和可循环再利用的废弃物。主要包括废玻璃、废金属、废塑料、废纸张、废织物等。"
+                    android:textColor="#FF000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tet_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:maxLines="12"
+                    android:scrollbarSize="10dp"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:text="    84消毒液瓶\n    A3纸\n    A4纸\n    AD钙奶瓶\n    保险柜\n    CD塑料盒\n    Celine包\n    DG包\n    DVD播放机\n    钢钉\n    贵腐酒瓶\n    手机\n    金属盆\n    金属碗\n    "
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F13232"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="247dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/img2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:inputType="textMultiLine"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="      有害垃圾是指对人体健康或者自然环境造成直接或者潜在危害的零星废弃物，单位集中产生的除外。主要包括废电池、废灯管、废药品、废油漆桶等"
+                    android:textColor="#FF000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tet_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:ellipsize="none"
+                    android:maxLines="12"
+                    android:scrollbarSize="10dp"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:text="    502胶水\n    704粘合剂\n    LED灯（含水银）\n    驱虫药\n    万用表电池\n    X光片\n    氨基甲酸酯类除草剂\n    酰胺类除草\n    安神补脑片\n    阿司匹林\n    笔记本电池\n    保健品\n    玻璃灯管\n    板蓝根冲剂\n    "
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7B8587"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="247dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/img5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:inputType="textMultiLine"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="      其他垃圾是指除有害垃圾、可回收物、厨余（餐厨）垃圾意外的其他生活废弃物。"
+                    android:textColor="#FF000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tet_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:ellipsize="none"
+                    android:maxLines="12"
+                    android:scrollbarSize="10dp"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:text="    1号电池\n    3D打印模型\n    3D眼镜\n    504胶水\n    504胶水废包装\n    5号电池\n    7号电池\n    A4纸包装袋\n    CD\n    DVD\n    KFC食物包装\n    木质棋盘\n    PE塑料袋\n    PH试纸\n    "
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
     </LinearLayout>
-
 </LinearLayout>
